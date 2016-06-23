@@ -443,13 +443,15 @@ int main(int argc,char **argv) {
     glutInit(&argc,argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGBA | GLUT_DEPTH);
 
-    //glutGameModeString("800x600");
-    //glutEnterGameMode();
-    //glutSetCursor(GLUT_CURSOR_NONE);
-
+#if defined(DEMO_FULLSCREEN)
+    glutGameModeString("800x600");
+    glutEnterGameMode();
+    glutSetCursor(GLUT_CURSOR_NONE);
+#else
 	glutInitWindowSize(800, 600);
 	glutInitWindowPosition(100, 100);
-	glutCreateWindow("01 - Project Shadow");
+	glutCreateWindow("01 - Projection Shadow");
+#endif
 
     init();
     glutDisplayFunc(display);
