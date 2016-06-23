@@ -7,6 +7,12 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02_ObjectLine", "src\02_Obj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03_LightMap", "src\03_LightMap\03_LightMap.vcxproj", "{C0334A2B-E832-4431-B913-29CC63E99119}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lord_Of_The_Rings", "Lord_Of_The_Rings", "{93677ECD-931F-4883-925D-BAA0AD8F7819}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Demos", "Demos", "{AFC5BFE4-83AA-4A49-A4AC-21A1008FBED0}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lotr", "src\Lord_Of_The_Rings\lotr.vcxproj", "{2DE72665-69AF-4288-8965-24EB4C43D4A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -25,8 +31,18 @@ Global
 		{C0334A2B-E832-4431-B913-29CC63E99119}.Debug|Win32.Build.0 = Debug|Win32
 		{C0334A2B-E832-4431-B913-29CC63E99119}.Release|Win32.ActiveCfg = Release|Win32
 		{C0334A2B-E832-4431-B913-29CC63E99119}.Release|Win32.Build.0 = Release|Win32
+		{2DE72665-69AF-4288-8965-24EB4C43D4A8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2DE72665-69AF-4288-8965-24EB4C43D4A8}.Debug|Win32.Build.0 = Debug|Win32
+		{2DE72665-69AF-4288-8965-24EB4C43D4A8}.Release|Win32.ActiveCfg = Release|Win32
+		{2DE72665-69AF-4288-8965-24EB4C43D4A8}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F175CCB-26C5-4C75-BABF-EDAA2A426428} = {AFC5BFE4-83AA-4A49-A4AC-21A1008FBED0}
+		{C0334A2B-E832-4431-B913-29CC63E99119} = {AFC5BFE4-83AA-4A49-A4AC-21A1008FBED0}
+		{2E5E6230-B429-40C6-A4C5-EBA1EF3DDEE3} = {AFC5BFE4-83AA-4A49-A4AC-21A1008FBED0}
+		{2DE72665-69AF-4288-8965-24EB4C43D4A8} = {93677ECD-931F-4883-925D-BAA0AD8F7819}
 	EndGlobalSection
 EndGlobal

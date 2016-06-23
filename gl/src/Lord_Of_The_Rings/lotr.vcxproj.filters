@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{91e77fb1-0748-451f-98f4-90d336e42a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{bc93291c-5ed9-4eee-b387-76f0e1d56a94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\thing.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\system.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\spline.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\sky.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\shadowmap.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\script.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\scene.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\particle.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\outtro.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\mathlib.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\loadtga.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\loadjpeg.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\loadime.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\load3ds.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\lightning.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\land.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\intro.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\font.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\dynamiclight.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\common.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common\camera.h">
+      <Filter>common</Filter>
+    </ClInclude>
+    <ClInclude Include="src\win32\sys_glext.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\thing.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\spline.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\sky.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\shadowmap.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\script.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\scene.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\particle.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\outtro.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\mathlib.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\loadtga.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\loadjpeg.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\loadime.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\load3ds.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\lightning.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\landindices.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\land.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\intro.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\font.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\dynamiclight.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\common.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\common\camera.c">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\sys_glext.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="src\win32\sys_win32.c">
+      <Filter>win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

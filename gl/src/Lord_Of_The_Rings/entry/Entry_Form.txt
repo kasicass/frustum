@@ -1,0 +1,49 @@
+=================================================================================================================
+
+                NeHe Productions Lord Of The Rings - Fellowship Of The Ring Contest Entry Form
+
+=================================================================================================================
+
+Project Title:
+
+Lord of the rings from Russia
+
+Project Description:
+
+Amazing demo filled with effects.
+
+Author:
+
+Alexander Zaprjagaev
+frustum@public.tsu.ru
+
+Notes:
+
+The main executable is "lotr.exe"
+Settings pass throught "lotr.cfg" or command line options.
+Here is some options:
+"width" - Width (int)
+"height" - Height (int)
+"bpp" - Bits per pixel (16/32)
+"fullscreen" - Fullscreen toggle (0 - windowed, 1 - fullscreen)
+"loop" - Loop demo (0/1)
+"texture" - Set texture filtration type (GL_LINEAR_MIPMAP_NEAREST - bilinear, GL_LINEAR_MIPMAP_LINEAR - trilinear)
+Firstly reads config file, then parses command line. Command line specified options override same from the config file. (Command line options have greater priority)
+Under MS Windows it is more convinient to use "config.exe" utility.
+Keys:
+'f' - Show fps counter
+'esc' - Quit demo
+'spase' - Pause demo
+
+Disclaimer:
+
+Echo of Sauron's voice called dark creatures to gather in Mordor to enforce his power.
+Uninhabbitant lands of Mordor, suppressed by the mysterious eye of it's terrible master.
+Dark forces, leading by Sauron are going to conquer all of around...
+
+=================================================================================================================
+
+ By submitting this project to NeHe Productions, I am giving NeHe Productions full permission to distribute both
+ the source code and executable for this project!  No signature required.
+
+=================================================================================================================

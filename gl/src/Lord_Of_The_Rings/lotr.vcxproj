@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2DE72665-69AF-4288-8965-24EB4C43D4A8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>lotr</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\DemoDebug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\DemoRelease.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>glu32.lib;opengl32.lib;Winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common\camera.h" />
+    <ClInclude Include="src\common\common.h" />
+    <ClInclude Include="src\common\dynamiclight.h" />
+    <ClInclude Include="src\common\font.h" />
+    <ClInclude Include="src\common\intro.h" />
+    <ClInclude Include="src\common\land.h" />
+    <ClInclude Include="src\common\lightning.h" />
+    <ClInclude Include="src\common\load3ds.h" />
+    <ClInclude Include="src\common\loadime.h" />
+    <ClInclude Include="src\common\loadjpeg.h" />
+    <ClInclude Include="src\common\loadtga.h" />
+    <ClInclude Include="src\common\mathlib.h" />
+    <ClInclude Include="src\common\outtro.h" />
+    <ClInclude Include="src\common\particle.h" />
+    <ClInclude Include="src\common\scene.h" />
+    <ClInclude Include="src\common\script.h" />
+    <ClInclude Include="src\common\shadowmap.h" />
+    <ClInclude Include="src\common\sky.h" />
+    <ClInclude Include="src\common\spline.h" />
+    <ClInclude Include="src\common\system.h" />
+    <ClInclude Include="src\common\thing.h" />
+    <ClInclude Include="src\win32\sys_glext.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\common\camera.c" />
+    <ClCompile Include="src\common\common.c" />
+    <ClCompile Include="src\common\dynamiclight.c" />
+    <ClCompile Include="src\common\font.c" />
+    <ClCompile Include="src\common\intro.c" />
+    <ClCompile Include="src\common\land.c" />
+    <ClCompile Include="src\common\landindices.c" />
+    <ClCompile Include="src\common\lightning.c" />
+    <ClCompile Include="src\common\load3ds.c" />
+    <ClCompile Include="src\common\loadime.c" />
+    <ClCompile Include="src\common\loadjpeg.c" />
+    <ClCompile Include="src\common\loadtga.c" />
+    <ClCompile Include="src\common\mathlib.c" />
+    <ClCompile Include="src\common\outtro.c" />
+    <ClCompile Include="src\common\particle.c" />
+    <ClCompile Include="src\common\scene.c" />
+    <ClCompile Include="src\common\script.c" />
+    <ClCompile Include="src\common\shadowmap.c" />
+    <ClCompile Include="src\common\sky.c" />
+    <ClCompile Include="src\common\spline.c" />
+    <ClCompile Include="src\common\thing.c" />
+    <ClCompile Include="src\win32\sys_glext.c" />
+    <ClCompile Include="src\win32\sys_win32.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
