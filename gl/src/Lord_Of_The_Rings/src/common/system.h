@@ -22,7 +22,7 @@ void sys_quit(void);
 int sys_width(void);
 int sys_height(void);
 int sys_key(void);
-int sys_initGL(int width,int height,int bpp,int fullscreen,char *title);
+int sys_initGL(int width,int height,int bpp,int fullscreen,wchar_t *title);
 void sys_swap(void);
 
 #endif /* __SYSTEM_H__ */

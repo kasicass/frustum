@@ -47,7 +47,7 @@ void sys_error(char *error,...) {
     vsprintf(buffer,error,argptr);
     va_end(argptr);
     if(fullscreen) ChangeDisplaySettings(NULL,0);
-    MessageBox(NULL,buffer,"error",0);
+    MessageBoxA(NULL,buffer,"error",0);
     exit(1);
 }
 
@@ -116,7 +116,7 @@ LRESULT CALLBACK sys_wndproc(HWND hwnd,UINT message,WPARAM wparam,LPARAM lparam)
  *
  */
 
-int sys_initGL(int width,int height,int bpp,int fs,char *title) {
+int sys_initGL(int width,int height,int bpp,int fs,wchar_t *title) {
     WNDCLASS wc;
     HWND hwnd;
     HDC hdc;
@@ -151,7 +151,7 @@ int sys_initGL(int width,int height,int bpp,int fs,char *title) {
     wc.hCursor = LoadCursor(NULL,IDC_ARROW);
     wc.hbrBackground = NULL;
     wc.lpszMenuName = NULL;
-    wc.lpszClassName = "lotr";
+    wc.lpszClassName = L"lotr";
     if(!RegisterClass(&wc)) return 0;
     if(fs) {
         memset(&settings,0,sizeof(DEVMODE));
@@ -169,7 +169,7 @@ int sys_initGL(int width,int height,int bpp,int fs,char *title) {
     windowwidth = width;
     windowheight = height;
     fullscreen = fs;
-    hwnd = CreateWindowEx(0,"lotr",title,style,0,0,width,height,NULL,NULL,hInstance,NULL);
+    hwnd = CreateWindowEx(0,L"lotr",title,style,0,0,width,height,NULL,NULL,hInstance,NULL);
     if(!hwnd) return 0;
     if(!(hdc = GetDC(hwnd))) return 0;
     if(!(pixelformat = ChoosePixelFormat(hdc,&pfd))) return 0;

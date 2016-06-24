@@ -257,7 +257,7 @@ void common_init(int argc,char **argv) {
         } else sys_error("command line unknow option %c%s%c",'"',string,'"');
     }
     
-    if(!sys_initGL(width,height,bpp,fullscreen,"Lord of the rings")) sys_error("error set mode");
+    if(!sys_initGL(width,height,bpp,fullscreen,L"Lord of the rings")) sys_error("error set mode");
     
     glClearDepth(1.0);
     glShadeModel(GL_SMOOTH);
