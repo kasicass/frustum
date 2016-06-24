@@ -1,0 +1,17 @@
+!!VP1.0
+
+MOV R0, v[OPOS];
+
+MOV R1, v[NRML];
+MUL R1, R1, c[5].x;
+
+ADD R0.xyz, R0, R1;
+
+DP4 o[HPOS].x, R0, c[0];
+DP4 o[HPOS].y, R0, c[1];
+DP4 o[HPOS].z, R0, c[2];
+DP4 o[HPOS].w, R0, c[3];
+
+MOV o[COL0], v[COL0];
+
+END
