@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="camera.c" />
+    <ClCompile Include="loadtga.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mathlib.c" />
+    <ClCompile Include="terrain.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="loadtga.h" />
+    <ClInclude Include="map.h" />
+    <ClInclude Include="mathlib.h" />
+    <ClInclude Include="terrain.h" />
+  </ItemGroup>
+</Project>

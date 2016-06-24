@@ -267,8 +267,6 @@ int main(int argc,char **argv) {
 		fprintf(stderr, "glewInit() error: %s\n", glewGetErrorString(err));
 	}
 
-
-
 	init();
 	glutDisplayFunc(display);
 	glutIdleFunc(idle);
