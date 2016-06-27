@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="load3ds.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mathlib.c" />
+    <ClCompile Include="mesh.c" />
+    <ClCompile Include="sv_mesh.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="load3ds.h" />
+    <ClInclude Include="mathlib.h" />
+    <ClInclude Include="mesh.h" />
+    <ClInclude Include="sv_mesh.h" />
+  </ItemGroup>
+</Project>
