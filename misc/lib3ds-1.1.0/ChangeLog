@@ -1,0 +1,153 @@
+2001-06-16  J E Hoffmann  <je-h@gmx.net>
+
+	* fixed spotlight reader/writer
+	* added lib3ds_light_dump, lib3ds_camera_dump
+	* updated lib3ds_material_dump
+	* added lib3ds_file_bounding_box
+	* Release 1.1.0
+
+2001-06-07  J E Hoffmann  <je-h@gmx.net>
+
+	* write only necessary chunks to .3ds file
+	* file.h/file.c: renamed lib3ds_open to lib3ds_file_load
+	  removed lib3ds_close (use lib3ds_file_free instead !!)
+          created lib3ds_file_save.
+	* Added msvc project file to create a dll.
+	* LIB3DS_KFHDR remains unchanged when saving a previously loaded file.
+
+2001-06-05  J E Hoffmann  <je-h@gmx.net>
+
+	* node.h/node.c, file.h/file.c: renamed "id" to node_id
+	* recreated MSVC project files. Only static library creation
+	  supported at the moment.
+
+2001-05-08  Michael Fink  <michael.fink@redspark.com>
+
+	* in lib3ds_atmosphere_write() the two chunk id's were accidentally swapped
+	* in lib3ds_mesh_write(), the chunks were reordered to enable a successful 
+	  import into AutoCAD 2000i and 3d Studio MAX 3.1
+	* in the struct _Lib3dsMapData the "maptype" data member was added, increasing
+	  the size of the chunk LIB3DS_MESH_TEXTURE_INFO to 92 bytes (as seen in 3ds 
+	  files from 3d Studio)
+	* the chunk LIB3DS_SHADOW_RANGE contains, according to the 3ds file development
+	  kit (3ds-fdk) a dword chunk; reading and writing the chunk should be fixed.
+
+2001-03-20  J E Hoffmann  <je-h@gmx.net>
+
+	* examples/3dsplay.c: new simples 3dsplayer example
+	  using glut. msvc support only at the moment.
+	* lib3ds/mesh.c: started working on vertex normal support
+	  (smoothing not supported at the moment, can't test them)
+	* Doxygen documentation files changed from *.doc to *.txt
+	  to avoid collisions with MS-Word on windows platforms  
+
+2001-01-15  J E Hoffmann  <je-h@gmx.net>
+
+	* lib3ds/material.c (lib3ds_material_dump): 
+	  Added dumping of ambient, diffuse, specular, shininess, 
+	  shin_strength, shading and texture1/texture2 properties
+	* examples/3dsdump.c (main): 
+	  Added suport for dumping the 3ds chunk structure
+	* lib3ds.spec: Updated
+
+2001-01-14  J E Hoffmann  <je-h@gmx.net>
+
+	* Removed Warnings (gcc & msvc++6.0)
+	* Cleaning up
+	* lib3ds.spec: Recreated
+
+2001-01-10  J E Hoffmann  <je-h@gmx.net>
+
+	* Wrote writing code for keyframer, background, atmosphere and 
+	  shadow settings.
+
+2001-01-09  J E Hoffmann  <je-h@gmx.net>
+
+	* lib3ds/mesh.c (lib3ds_mesh_write): 
+	  the point list is no loner retransformed to avoid numerical problems.
+	  to use meshes with the keyframer all points must be transformed
+	  by the inverse mesh-matrix manually.
+	* lib3ds/camera.c (lib3ds_camera_write):
+	  bugfix LIB3DS_N_CAMERA (fov)
+	* lib3ds/light.c (lib3ds_light_write):
+	  bugfix LIB3DS_DL_SPOTLIGHT
+	* lib3ds/material.c (texture_map_write):
+	  write only chunks for maps with name != ""
+	  (int_percentage_read), (int_percentage_write):
+	  bugfix rounding error
+
+2001-01-04  J E Hoffmann  <je-h@gmx.net>
+
+	* lib3ds/readwrite.c: cpu independent endiness handling 
+	  as suggested by Daniel Richard G. <straker@mit.edu>
+
+2001-01-03  J E Hoffmann  <je-h@gmx.net>
+
+	* lib3ds/mesh.c: Added missing texture mapping handling
+	  LIB3DS_TEX_VERTS 
+	  LIB3DS_MESH_TEXTURE_INFO
+	* lib3ds/matrix.c 
+	  (lib3ds_matrix_camera): Bug #124414 fixed
+	* lib3ds/material.c 
+	  (color_read): Bug #124399 fixed
+	  (texture_map_read): texture percentage fixed 
+
+2000-10-30  J E Hoffmann  <je-h@gmx.net>
+
+	* Renamed tools (examples) from lib3ds* -> 3ds*
+	* configure.in: Removed all non GCC compiler options,
+	    leaving cflags untouched 
+
+2000-10-27  J E Hoffmann  <je-h@gmx.net>
+
+	* doc/mainpage.doc: Added view3ds OpenGL realtime previewer example.
+	  Avaiable as separate distributon.
+	  No Changes to the library.
+
+2000-10-25  J E Hoffmann  <je-h@gmx.net>
+
+	* Release 0.9.1
+	* Examples get installed now
+	* Man pages get installed now
+
+2000-10-24  J E Hoffmann  <je-h@gmx.net>
+
+	* lib3ds.spec: Created
+
+2000-10-19  J E Hoffmann  <je-h@gmx.net>
+
+	* CVSROOT/cvswrappers: created entries for msvc project files 
+	* Created MSVC project files
+	* Setting up cvs commit logging 
+
+2000-10-17  J E Hoffmann  <je-h@gmx.net>
+
+	* Release: 0.9.0
+
+2000-10-09  J E Hoffmann  <je-h@gmx.net>
+
+	* Using now doxygen for documentation and webpage
+
+2000-10-05  J E Hoffmann  <je-h@gmx.net>
+
+	* Turned all double linked lists into single linked lists 
+	* Added dmalloc support for memory leak tracking 
+	* Added support to deallocate allocated memory
+
+2000-10-04  J E Hoffmann  <je-h@gmx.net>
+
+	* ANSI C fixes. Using now -ansi & -pedantic-errors for debug mode 
+	* Improved little/endian checks & debug mode handling
+	* lib3ds/file.h: Added material lookup functions
+	* Starting ChangeLog
+
+
+
+
+
+
+
+
+
+
+	
