@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="font.c" />
+    <ClCompile Include="load3ds.c" />
+    <ClCompile Include="loadjpeg.c" />
+    <ClCompile Include="loadmdc.c" />
+    <ClCompile Include="loadtga.c" />
+    <ClCompile Include="main.c" />
+    <ClCompile Include="mathlib.c" />
+    <ClCompile Include="shadow.c" />
+    <ClCompile Include="skinnedmesh.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="font.h" />
+    <ClInclude Include="load3ds.h" />
+    <ClInclude Include="loadjpeg.h" />
+    <ClInclude Include="loadmdc.h" />
+    <ClInclude Include="loadtga.h" />
+    <ClInclude Include="mathlib.h" />
+    <ClInclude Include="shadow.h" />
+    <ClInclude Include="skinnedmesh.h" />
+  </ItemGroup>
+</Project>
