@@ -322,7 +322,7 @@ main(int argc, char** argv)
   filename=argv[1];
 
   glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
-  glutInitWindowSize(500, 500); 
+  glutInitWindowSize(800, 600); 
   glutInitWindowPosition(100, 100);
   glutCreateWindow(argv[0]);
   init();
